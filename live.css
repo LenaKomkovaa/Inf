@@ -1,0 +1,40 @@
+body {
+    padding: 20px;
+    background-color: white;
+}
+
+#gridContainer {
+    padding-bottom: 10px;
+}
+
+table {
+    background-color: white;
+    border-spacing: 0;
+}
+
+td {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+}
+
+span {
+    color: black;
+}
+
+#start,
+#clear,
+#random {
+    padding: 20px;
+    border: none;    
+    
+}
+
+td.dead {
+    background-color: transparent;
+}
+
+td.live {
+    background-color: green;
+   
+}
