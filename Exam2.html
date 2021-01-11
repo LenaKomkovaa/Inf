@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exam2</title>
+        <meta charset="UTF-8">
+        <style>
+            .input_text{
+                width: 200px;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="inputs">
+            <input type="text" class="input_text" name="text" placeholder="Ввод текста" value="">
+            <br><br>
+            <input type="button" id="addbtn" value="Добавить">
+        </form>
+        <ul id="list">
+            
+        </ul>
+        <script>
+            let addBtn = document.getElementById("addbtn");
+            addBtn.onclick = addElement;
+            function addElement(){
+                let text = document.inputs.text.value;
+                let textNode = document.createTextNode(text);
+                let list = document.getElementById("list");
+                let li = document.createElement("li");
+
+                list.appendChild(li);
+                li.appendChild(textNode);
+            }
+        </script>
+    </body>
+</html>
